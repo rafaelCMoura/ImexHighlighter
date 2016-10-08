@@ -1,1 +1,1 @@
-"# Simple sintax highlighter for CMG's IMEX language in Brackets"
+# Simple sintax highlighter for CMG's IMEX language in Brackets
