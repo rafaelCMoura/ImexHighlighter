@@ -1,0 +1,11 @@
+{
+	"name": "brackets-imex",
+	"title": "Brackets IMEX",
+	"homepage": "https://github.com/rafaelCMoura/ImexHighlighter",
+	"description": "Provides CMG's IMEX syntax highlight for Brackets.",
+	"version": "1.0.0",
+	"author": "Rafael Cabral de Moura",
+	"engines": {
+		"brackets": ">=1.7.0" // Verificar qual versão colocar aqui
+	}
+} 
