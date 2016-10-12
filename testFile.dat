@@ -3,9 +3,8 @@ POR 0.1
 ** Testing comments 
 
 *POR 0.3 POR 
-por 0.5  23  0.9  0.4
-
+por  0.4
 ** Testing strings 
 
-"test string 1" 
+sadf "test string 1" bug
 

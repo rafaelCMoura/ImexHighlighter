@@ -19,7 +19,7 @@ define(function (require, exports, module) {
                 }
         
                 // String
-                if (stream.match(/"(.*?)"/)) {
+                if (stream.match(/"."/)) {
                     stream.skipToEnd();
                     return 'imex_string';
                 }
@@ -34,6 +34,16 @@ define(function (require, exports, module) {
                     return 'imex_card';
                 }
         
+                // Easter egg
+                if (stream.match(/Rafael Cabral de Moura/)) {
+                    return 'imex_magic';
+                }
+                
+                // BR Logo
+                if (stream.match(/\sBR\s/)) {
+                    return 'imex_BR';
+                }
+                
                 // Skip everything else
                 stream.eat(/./);
             },
