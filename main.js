@@ -25,7 +25,7 @@ define(function (require, exports, module) {
                 }
         
                 // Number
-                if (stream.match(/^(-?[1-9]+\\d*([.]\\d+)?)$|^(-?0[.]\\d*[1-9]+)$|^0$/)) {
+                if (stream.match(/(\d*\.\d\d*|\d+)/)) {
                     return 'imex_number';
                 }
                 
