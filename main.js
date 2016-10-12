@@ -13,7 +13,7 @@ define(function (require, exports, module) {
             token: function (stream, state) {
             
                 // String
-                if (stream.match(/(\"[\w\s]+\")/) {
+                if (stream.match(/(\"[\w\s]+\")/)) {
                     stream.skipToEnd();
                     return 'imex_string';
                 }
@@ -44,7 +44,5 @@ define(function (require, exports, module) {
         blockComment: ["**", "**"],
         lineComment: ["**"]
     });
-    
-    
     
 });
