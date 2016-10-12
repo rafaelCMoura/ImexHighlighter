@@ -4,7 +4,7 @@ define(function (require, exports, module) {
     brackets.getModule("thirdparty/CodeMirror2/lib/codemirror");
     
     // Defining a new CodeMirror mode to use with brackets:
-    CodeMirror.defineMode("imex", function (config, parseConfig){
+    CodeMirror.defineMode("imex", function (config, parseConfig) {
         
         var ExtensionUtils = brackets.getModule("utils/ExtensionUtils");
         ExtensionUtils.loadStyleSheet(module, "styles/styles.css");
@@ -34,6 +34,8 @@ define(function (require, exports, module) {
             startState: function(){ return {inComment: false}; }
         };
     });
+    
+    CodeMirror.defineMIME("text/imex", "imex");
     
     var LanguageManager = brackets.getModule("language/LanguageManager");
     
