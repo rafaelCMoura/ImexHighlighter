@@ -38,7 +38,43 @@ define(function (require, exports, module) {
                     return 'imex_card_reservoir';
                 }
                 
-        
+                // Keyword COMPONENT
+                if (stream.match(/(\*|)(PVT|DENSITY|OIL|GAS|WATER|CO|CVO|CVW|BWI|CW|REFPW|VWI)/)) {
+                    return 'imex_card_component';
+                }
+                
+                
+                // Keyword ROCKFLUID
+                if (stream.match(/(\*|)(ROCKFLUID|RPT|SWT|SLT)/)) {
+                    return 'imex_card_rockfluid';
+                }
+                
+                
+                // Keyword INITIAL
+                if (stream.match(/(\*|)(INITIAL|VERTICAL|BLOCK_CENTER|REFDEPTH|REFPRES|DWOC|DGOC)/)) {
+                    return 'imex_card_initial';
+                }
+                
+                // Keyword NUMERICAL
+                if (stream.match(/(\*|)(NUMERICAL|DTMAX|NORM|PRESS|SATUR)/)) {
+                    return 'imex_card_numerical';
+                }
+                
+                // Keyword WELL
+                if (stream.match(/(\*|)(WELL|DTWELL|DYNAGRID|DEREFINE|INJECTOR|OPERATE)/)) {
+                    return 'imex_card_well';
+                }
+                
+                // Keyword RUN
+                if (stream.match(/(\*|)RUN/)) {
+                    return 'imex_card_run';
+                }
+                
+                // Keyword STOP
+                if (stream.match(/(\*|)STOP/)) {
+                    return 'imex_card_stop';
+                }
+                
                 // Easter egg
                 if (stream.match(/Rafael Cabral de Moura/)) {
                     return 'imex_magic';

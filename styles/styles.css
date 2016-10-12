@@ -3,7 +3,7 @@
 }
 
 .cm-imex_number{
-    color: limegreen;
+    color: lightgreen;
 }
 
 .cm-imex_card_io{
@@ -15,25 +15,25 @@
 }
 
 .cm-imex_card_component{
-    color: dodgerblue;
+    color: red;
 }
 
 .cm-imex_card_rockfluid{
-    color: dodgerblue;
+    color: mediumpurple;
 }
 
 
 .cm-imex_card_initial{
-    color: dodgerblue;
+    color: goldenrod;
 }
 
 
 .cm-imex_card_numerical{
-    color: dodgerblue;
+    color: navajowhite;
 }
 
 .cm-imex_card_well{
-    color: dodgerblue;
+    color: cornflowerblue;
 }
 
 .cm-imex_card_run{
