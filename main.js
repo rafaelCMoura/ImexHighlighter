@@ -19,7 +19,7 @@ define(function (require, exports, module) {
                 }
         
                 // String
-                if (stream.match(/(".*")/)) {
+                if (stream.match(/("\w*")/)) {
                     stream.skipToEnd();
                     return 'imex_string';
                 }
