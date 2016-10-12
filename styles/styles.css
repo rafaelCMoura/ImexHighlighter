@@ -6,10 +6,45 @@
     color: limegreen;
 }
 
-.cm-imex_card{
+.cm-imex_card_io{
     color: dodgerblue;
 }
 
+.cm-imex_card_reservoir{
+    color: deeppink;
+}
+
+.cm-imex_card_component{
+    color: dodgerblue;
+}
+
+.cm-imex_card_rockfluid{
+    color: dodgerblue;
+}
+
+
+.cm-imex_card_initial{
+    color: dodgerblue;
+}
+
+
+.cm-imex_card_numerical{
+    color: dodgerblue;
+}
+
+.cm-imex_card_well{
+    color: dodgerblue;
+}
+
+.cm-imex_card_run{
+    color: yellow;
+    background: #00FF00;
+}
+
+.cm-imex_card_stop{
+    color: yellow;
+    background: #FF0000;
+}
 
 .cm-imex_comment{
     color: darkgray;

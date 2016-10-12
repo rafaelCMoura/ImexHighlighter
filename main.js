@@ -28,10 +28,16 @@ define(function (require, exports, module) {
                     return 'imex_number';
                 }
                 
-                // Keyword
-                if (stream.match(/(\*|)(POR|RESULTS|SIMULATOR|IMEX|TITLE1|TITLE2|INUNIT|FIELD|WPRN|WELL|TIME)/)) {
-                    return 'imex_card';
+                // Keyword IO
+                if (stream.match(/(\*|)(RESULTS|SIMULATOR|IMEX|TITLE1|TITLE2|INUNIT|FIELD|WPRN|TIME|ITER|BRIEF|RES|OUTPRN|TABLES|NONE|WSRF|OUTSRF|WRST|DEBUG|PDUMP)/)) {
+                    return 'imex_card_io';
                 }
+                
+                // Keyword RESERVOIR
+                if (stream.match(/(\*|)(GRID|CART|DI|DJ|DK|CON|IVAR|JVAR|KVAR|DEPTH|POR|CPOR|PRPOR|PERMI|PERMJ|PERMK|REFINE|INTO|MODEL|BLACKOIL)/)) {
+                    return 'imex_card_reservoir';
+                }
+                
         
                 // Easter egg
                 if (stream.match(/Rafael Cabral de Moura/)) {
