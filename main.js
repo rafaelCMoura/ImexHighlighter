@@ -19,13 +19,13 @@ define(function (require, exports, module) {
                 }
         
                 // String
-                if (stream.match(/(\"[\w\s]+\")/)) {
+                if (stream.match(/"(.*?)"/)) {
                     stream.skipToEnd();
                     return 'imex_string';
                 }
         
                 // Number
-                if (stream.match(/\d+((.|,)\d+)?/)) {
+                if (stream.match(/^(([0-9]*)|(([0-9]*)\.([0-9]*)))$/)) {
                     return 'imex_number';
                 }
                 
