@@ -20,7 +20,6 @@ define(function (require, exports, module) {
         
                 // String
                 if (stream.match(/(".*"|'.*')/)) {
-                    stream.skipToEnd();
                     return 'imex_string';
                 }
         
