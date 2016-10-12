@@ -1,16 +1,15 @@
 .cm-imex_string{
-    color: blue;
-}
-
-.cm-imex_number{
     color: darkorange;
 }
 
-.cm-imex_card{
-    color: deeppink;
+.cm-imex_number{
+    color: limegreen;
 }
 
-.cm-imex_card:hover{
-    color: blue;
-    font-size: 120%;
+.cm-imex_card{
+    color: dodgerblue;
+}
+
+.cm-imex_comment{
+    color: darkgray;
 }

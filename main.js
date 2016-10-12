@@ -12,6 +12,12 @@ define(function (require, exports, module) {
         return {
             token: function (stream, state) {
             
+                // Comments
+                if (stream.match(/\*\*.*/)) {
+                    stream.skipToEnd();
+                    return 'imex_comment';
+                }
+        
                 // String
                 if (stream.match(/(\"[\w\s]+\")/)) {
                     stream.skipToEnd();
