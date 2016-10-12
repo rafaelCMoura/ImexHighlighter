@@ -19,13 +19,13 @@ define(function (require, exports, module) {
                 }
         
                 // String
-                if (stream.match(/"."/)) {
+                if (stream.match(/(".*")/)) {
                     stream.skipToEnd();
                     return 'imex_string';
                 }
         
-                // Number
-                if (stream.match(/^(([0-9]*)|(([0-9]*)\.([0-9]*)))$/)) {
+                // Number ([0-9]*\.[0-9]*|[0-9]*)
+                if (stream.match(/([0-9]*\.[0-9]*|[0-9]*)/)) {
                     return 'imex_number';
                 }
                 
