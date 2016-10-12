@@ -6,6 +6,6 @@
 	"version": "1.0.0",
 	"author": "Rafael Cabral de Moura",
 	"engines": {
-		"brackets": ">=1.7.0" // Verificar qual versão colocar aqui
+		"brackets": ">=1.7.0"
 	}
 } 
