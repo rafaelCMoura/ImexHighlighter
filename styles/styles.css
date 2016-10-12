@@ -33,5 +33,10 @@
 
 .cm-imex_BR:before{
     content: "**  ";
+    text-decoration: none;
+    color: darkgray;
+    font-style: normal;
+    background: transparent;
+    border-top-width: 0px;
 }
 
