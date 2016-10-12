@@ -12,7 +12,7 @@ define(function (require, exports, module) {
         return {
             token: function (stream, state) {
             
-                // Comments
+                // Comments (Adicionar um regex q ignore o ** BR )
                 if (stream.match(/\*\*.*/)) {
                     stream.skipToEnd();
                     return 'imex_comment';
