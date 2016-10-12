@@ -8,14 +8,8 @@
 
 .cm-imex_card{
     color: dodgerblue;
-    transition: font-size 0.1s ease-in-out;
-    transition: color 0.1s ease-in-out;
 }
 
-.cm-imex_card:hover{
-    color: skyblue;
-    font-size: 120%;
-}
 
 .cm-imex_comment{
     color: darkgray;

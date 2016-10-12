@@ -29,7 +29,7 @@ define(function (require, exports, module) {
                 }
                 
                 // Keyword
-                if (stream.match(/(\*|)(POR|RESULTS|SIMULATOR|IMEX|TITLE1|TITLE2|INUNIT|FIELD|WPRN|WELL|TIME|)/)) {
+                if (stream.match(/(\*|)(POR|RESULTS|SIMULATOR|IMEX|TITLE1|TITLE2|INUNIT|FIELD|WPRN|WELL|TIME)/)) {
                     return 'imex_card';
                 }
         
