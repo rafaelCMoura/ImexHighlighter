@@ -9,3 +9,8 @@
 .cm-imex_card{
     color: deeppink;
 }
+
+.cm-imex_card:hover{
+    color: blue;
+    font-size: 120%;
+}
