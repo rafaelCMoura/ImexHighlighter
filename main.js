@@ -29,41 +29,45 @@ define(function (require, exports, module) {
                 }
                 
                 // Keyword IO
-                if (stream.match(/(\*|)(RESULTS|SIMULATOR|IMEX|TITLE1|TITLE2|INUNIT|FIELD|WPRN|TIME|ITER|BRIEF|RES|OUTPRN|TABLES|NONE|WSRF|OUTSRF|WRST|DEBUG|PDUMP)/)) {
-                    return 'imex_card_io';
+                if (stream.match(/(\*|)(RESULTS|SIMULATOR|IMEX|TITLE1|TITLE2|TITLE3|CASEID|INUNIT|FIELD|WPRN|TIME|ITER|BRIEF|RES|OUTPRN|TABLES|NONE|WSRF|OUTSRF|WRST|DEBUG|PDUMP|PRES|GRID|CART|CON|DEPTH|POR|CPOR|PRPOR|PERMI|PERMJ|PERMK|REFINE|INTO|MODEL|BLACKOIL|PVT|DENSITY|BWI|REFPW|VWI|ROCKFLUID|RPT|SWT|SLT|INITIAL|VERTICAL|BLOCK_CENTER|REFDEPTH|REFPRES|DWOC|DGOC|NUMERICAL|DTMAX|NORM|PRESS|SATUR|WELL|DTWELL|DYNAGRID|DEREFINE|PRODUCER|INJECTOR|MONITOR|OPERATE|DATE|PERFV|GEOMETRY|ALTER)/)) {
+                    return 'imex_card_main';
                 }
                 
-                // Keyword RESERVOIR
-                if (stream.match(/(\*|)(GRID|CART|DI|DJ|DK|CON|IVAR|JVAR|KVAR|DEPTH|POR|CPOR|PRPOR|PERMI|PERMJ|PERMK|REFINE|INTO|MODEL|BLACKOIL)/)) {
-                    return 'imex_card_reservoir';
+                // Keyword WATER
+                if (stream.match(/(\*|)(MIN|MAX|STG|BHP|STO|GOR|WCUT|GEO|SHUTIN|CONT|REPEAT)/)) {
+                    return 'imex_card_sub';
                 }
                 
-                // Keyword COMPONENT
-                if (stream.match(/(\*|)(PVT|DENSITY|OIL|GAS|WATER|CO|CVO|CVW|BWI|CW|REFPW|VWI)/)) {
-                    return 'imex_card_component';
+                // Keyword WATER
+                if (stream.match(/(\*|)(WATER|SW|CW|CVW)/)) {
+                    return 'imex_card_water';
                 }
                 
-                
-                // Keyword ROCKFLUID
-                if (stream.match(/(\*|)(ROCKFLUID|RPT|SWT|SLT)/)) {
-                    return 'imex_card_rockfluid';
+                // Keyword OIL
+                if (stream.match(/(\*|)(OIL|SO|CO|CVO)/)) {
+                    return 'imex_card_oil';
                 }
                 
-                
-                // Keyword INITIAL
-                if (stream.match(/(\*|)(INITIAL|VERTICAL|BLOCK_CENTER|REFDEPTH|REFPRES|DWOC|DGOC)/)) {
-                    return 'imex_card_initial';
+                // Keyword GAS
+                if (stream.match(/(\*|)(GAS|SG)/)) {
+                    return 'imex_card_gas';
                 }
                 
-                // Keyword NUMERICAL
-                if (stream.match(/(\*|)(NUMERICAL|DTMAX|NORM|PRESS|SATUR)/)) {
-                    return 'imex_card_numerical';
+                // Keyword I
+                if (stream.match(/(\*|)(DI|IVAR|DK)/)) {
+                    return 'imex_card_i';
                 }
                 
-                // Keyword WELL
-                if (stream.match(/(\*|)(WELL|DTWELL|DYNAGRID|DEREFINE|INJECTOR|OPERATE)/)) {
-                    return 'imex_card_well';
+                // Keyword J
+                if (stream.match(/(\*|)(DJ|JVAR|DK)/)) {
+                    return 'imex_card_j';
                 }
+                
+                // Keyword K
+                if (stream.match(/(\*|)(DK|KVAR|DK)/)) {
+                    return 'imex_card_k';
+                }
+                
                 
                 // Keyword RUN
                 if (stream.match(/(\*|)RUN/)) {

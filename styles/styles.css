@@ -6,38 +6,41 @@
     color: lightgreen;
 }
 
-.cm-imex_card_io{
+.cm-imex_card_main{
     color: dodgerblue;
 }
 
-.cm-imex_card_reservoir{
+.cm-imex_card_sub{
     color: deeppink;
 }
 
-.cm-imex_card_component{
+.cm-imex_card_water{
+    color: deepskyblue;
+}
+
+.cm-imex_card_oil{
+    color: brown;
+}
+
+.cm-imex_card_gas{
+    color: lightgreen;
+}
+
+.cm-imex_card_i{
     color: red;
 }
 
-.cm-imex_card_rockfluid{
-    color: mediumpurple;
+.cm-imex_card_j{
+    color: green;
 }
 
-
-.cm-imex_card_initial{
-    color: goldenrod;
+.cm-imex_card_k{
+    color: blue;
 }
 
-
-.cm-imex_card_numerical{
-    color: navajowhite;
-}
-
-.cm-imex_card_well{
-    color: cornflowerblue;
-}
 
 .cm-imex_card_run{
-    color: yellow;
+    color: red;
     background: #00FF00;
 }
 
