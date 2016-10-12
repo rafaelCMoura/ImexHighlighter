@@ -24,8 +24,8 @@ define(function (require, exports, module) {
                     return 'imex_string';
                 }
         
-                // Number ([0-9]*\.[0-9]*|[0-9]*)
-                if (stream.match(/([0-9]*\.[0-9]*|[0-9]*)/)) {
+                // Number
+                if (stream.match(/^(-?[1-9]+\\d*([.]\\d+)?)$|^(-?0[.]\\d*[1-9]+)$|^0$/)) {
                     return 'imex_number';
                 }
                 
