@@ -29,53 +29,53 @@ define(function (require, exports, module) {
                 }
                 
                 // Keyword IO
-                if (stream.match(/(\*|)(RESULTS|SIMULATOR|IMEX|TITLE1|TITLE2|TITLE3|CASEID|INUNIT|FIELD|WPRN|TIME|ITER|BRIEF|RES|OUTPRN|TABLES|NONE|WSRF|OUTSRF|WRST|DEBUG|PDUMP|PRES|GRID|CART|CON|DEPTH|POR|CPOR|PRPOR|PERMI|PERMJ|PERMK|REFINE|INTO|MODEL|BLACKOIL|PVT|DENSITY|BWI|REFPW|VWI|ROCKFLUID|RPT|SWT|SLT|INITIAL|VERTICAL|BLOCK_CENTER|REFDEPTH|REFPRES|DWOC|DGOC|NUMERICAL|DTMAX|NORM|PRESS|SATUR|WELL|DTWELL|DYNAGRID|DEREFINE|PRODUCER|INJECTOR|MONITOR|OPERATE|DATE|PERFV|GEOMETRY|ALTER) /)) {
+                if (stream.match(/(\*|)(RESULTS|SIMULATOR|IMEX|TITLE1|TITLE2|TITLE3|CASEID|INUNIT|FIELD|WPRN|MOD|END-GRID|ITER|BRIEF|RES|OUTPRN|WSRF|OUTSRF|WRST|DEBUG|PDUMP|CART|DEPTH|POR|CPOR|PRPOR|PERMI|PERMJ|PERMK|REFINE|INTO|MODEL|BLACKOIL|PVT|DENSITY|BWI|REFPW|VWI|ROCKFLUID|RPT|SWT|SLT|INITIAL|VERTICAL|BLOCK_CENTER|REFDEPTH|REFPRES|DWOC|DGOC|NUMERICAL|DTMAX|NORM|PRESS|SATUR|DTWELL|DYNAGRID|DEREFINE|PRODUCER|INJECTOR|MONITOR|OPERATE|DATE|PERFV|GEOMETRY|ALTER)/)) {
                     return 'imex_card_main';
                 }
                 
                 // Keyword WATER
-                if (stream.match(/(\*|)(MIN|MAX|STG|BHP|STO|GOR|WCUT|GEO|SHUTIN|CONT|REPEAT) /)) {
+                if (stream.match(/(\*|)(MIN|MAX|STG|BHP|STO|GOR|WCUT|GEO|SHUTIN|CONT|REPEAT|SI|EQUALSI|CON|TIME|TABLES|NONE|PRES|DATUMPRES|GRID|WELL|WELL-INFO|PSPLIT|ALL)/)) {
                     return 'imex_card_sub';
                 }
                 
                 // Keyword WATER
-                if (stream.match(/(\*|)(WATER|SW|CW|CVW) /)) {
+                if (stream.match(/(\*|)(WATER|SW|CW|CVW|INCLUDE)/)) {
                     return 'imex_card_water';
                 }
                 
                 // Keyword OIL
-                if (stream.match(/(\*|)(OIL|SO|CO|CVO) /)) {
+                if (stream.match(/(\*|)(OIL|SO|CO|CVO)/)) {
                     return 'imex_card_oil';
                 }
                 
                 // Keyword GAS
-                if (stream.match(/(\*|)(GAS|SG) /)) {
+                if (stream.match(/(\*|)(GAS|SG)/)) {
                     return 'imex_card_gas';
                 }
                 
                 // Keyword I
-                if (stream.match(/(\*|)(DI|IVAR|DK) /)) {
+                if (stream.match(/(\*|)(DI|IVAR|DK)/)) {
                     return 'imex_card_i';
                 }
                 
                 // Keyword J
-                if (stream.match(/(\*|)(DJ|JVAR|DK) /)) {
+                if (stream.match(/(\*|)(DJ|JVAR|DK)/)) {
                     return 'imex_card_j';
                 }
                 
                 // Keyword K
-                if (stream.match(/(\*|)(DK|KVAR|DK) /)) {
+                if (stream.match(/(\*|)(DK|KVAR|DK)/)) {
                     return 'imex_card_k';
                 }
                 
                 
                 // Keyword RUN
-                if (stream.match(/(\*|)RUN /)) {
+                if (stream.match(/(\*|)(RUN)/)) {
                     return 'imex_card_run';
                 }
                 
                 // Keyword STOP
-                if (stream.match(/(\*|)STOP /)) {
+                if (stream.match(/(\*|)(STOP)/)) {
                     return 'imex_card_stop';
                 }
                 
