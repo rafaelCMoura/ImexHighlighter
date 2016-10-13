@@ -28,13 +28,13 @@ define(function (require, exports, module) {
                     return 'imex_number';
                 }
                 
-                // Keyword IO
+                // Keyword Main Cards
                 if (stream.match(/(\*|)(RESULTS|SIMULATOR|IMEX|TITLE1|TITLE2|TITLE3|CASEID|DIARY|VOLMOD|COMPNAME|MODEL|INUNIT|FIELD|WPRN|MOD|END-GRID|ITER|BRIEF|RES|OUTPRN|WSRF|OUTSRF|WRST|DEBUG|PDUMP|CART|DEPTH|POR|CPOR|PRPOR|PERMI|PERMJ|PERMK|REFINE|INTO|MODEL|BLACKOIL|PVT|DENSITY|BWI|REFPW|VWI|ROCKFLUID|RPT|SWT|SLT|INITIAL|VERTICAL|BLOCK_CENTER|REFDEPTH|REFPRES|DWOC|DGOC|NUMERICAL|DTMAX|NORM|PRESS|SATUR|DTWELL|DYNAGRID|DEREFINE|PRODUCER|INJECTOR|MONITOR|OPERATE|DATE|PERFV|GEOMETRY|ALTER)/)) {
                     return 'imex_card_main';
                 }
                 
-                // Keyword WATER
-                if (stream.match(/(\*|)(MIN|MAX|STG|BHP|STO|GOR|WCUT|GEO|SHUTIN|CONT|REPEAT|SI|EQUALSI|CON|TIME|TABLES|NONE|PRES|DATUMPRES|GRID|WELL|WELL-INFO|PSPLIT|ALL)/)) {
+                // Keyword SubCards
+                if (stream.match(/(\*|)(MIN|MAX|STG|BHP|STO|GOR|WCUT|GEO|SHUTIN|CONT|REPEAT|SI|EQUALSI|CON|TIME|TABLES|NONE|PRES|DATUMPRES|GRID|WELL|WELL\-INFO|PSPLIT|ALL)/)) {
                     return 'imex_card_sub';
                 }
                 
