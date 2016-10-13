@@ -1,56 +1,56 @@
 .cm-imex_string{
-    color: darkorange;
+    color: #D89333;
 }
 
 .cm-imex_number{
-    color: lightgreen;
+    color: #DDDDDD;
 }
 
 .cm-imex_card_main{
-    color: dodgerblue;
+    color: #6C9EF8;
 }
 
 .cm-imex_card_sub{
-    color: deeppink;
+    color: #85A300;
 }
 
 .cm-imex_card_water{
-    color: deepskyblue;
+    color: #B77FDB;
 }
 
 .cm-imex_card_oil{
-    color: brown;
+    color: #B77FDB;
 }
 
 .cm-imex_card_gas{
-    color: lightgreen;
+    color: #B77FDB;
 }
 
 .cm-imex_card_i{
-    color: red;
+    color: #B77FDB;
 }
 
 .cm-imex_card_j{
-    color: green;
+    color: #B77FDB;
 }
 
 .cm-imex_card_k{
-    color: blue;
+    color: #B77FDB;
 }
 
 
 .cm-imex_card_run{
-    color: red;
-    background: #00FF00;
+    color: #B77FDB;
+    background: white;
 }
 
 .cm-imex_card_stop{
-    color: yellow;
-    background: #FF0000;
+    color: #B77FDB;
+    background: white;
 }
 
 .cm-imex_comment{
-    color: darkgray;
+    color: #767676;
 }
 
 .cm-imex_magic{
