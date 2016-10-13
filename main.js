@@ -1,7 +1,7 @@
 define(function (require, exports, module) {
 	'use strict';
 
-    brackets.getModule("thirdparty/CodeMirror2/lib/codemirror");
+    brackets.getModule("thirdparty/CodeMirror/lib/codemirror");
     
     // Defining a new CodeMirror mode to use with brackets:
     CodeMirror.defineMode("imex", function (config, parseConfig) {
